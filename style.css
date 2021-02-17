@@ -88,6 +88,11 @@ body {
   font-size: 110%;
 }
 
+#about-text {
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
 i {
   color: white;
   font-size: 60px;

@@ -98,3 +98,7 @@ i {
   font-size: 60px;
   margin-top: 15px;
 }
+
+i#github-Icon {
+  padding-left: 8px;
+}

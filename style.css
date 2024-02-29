@@ -1,35 +1,21 @@
-body {
-  font-family: system-ui;
-  background: #333;
-  color: white;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: auto;
   background-color: #333;
 }
 
-nav li {
-  display: inline-block;
+li {
+  float: left;
 }
 
-nav li a {
+li a {
   display: block;
   color: white;
   text-align: center;
   padding: 15px 18px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-nav li a:hover, nav li a:focus {
-  background-color: #555;
 }
 
 .sticky {
@@ -38,10 +24,21 @@ nav li a:hover, nav li a:focus {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  nav li {
-      display: block;
-  }
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.empty-space {
+  height: 50px;
+}
+
+body {
+  font-family: system-ui;
+  background: #333;
+  color: white;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 .home-banner {
@@ -52,18 +49,17 @@ nav li a:hover, nav li a:focus {
   background-size: cover;
 }
 
-.home-banner-content .name,
-.home-banner-content .description {
-  text-shadow: 0 0 5px #000, 3px 3px 5px #000;
-}
-
 .home-banner-content .name {
   font-size: 250%;
+  color: white;
+  text-shadow: 0px 0px 5px #000, 3px 3px 5px #000;
   font-weight: bold;
 }
 
 .home-banner-content .description {
   font-size: 140%;
+  color: white;
+  text-shadow: 0px 0px 5px #000, 3px 3px 5px #000;
   margin-top: 5px;
 }
 
@@ -73,20 +69,36 @@ nav li a:hover, nav li a:focus {
   border: 3px solid black;
 }
 
-.section h2 {
-  border-bottom: 3px solid white;
-  padding: 0 10px;
-  font-size: 200%;
-  font-weight: bold;
+.section {
+    height: fit;
+    padding-bottom: 0px;
+    background-color: #333;
+    margin-bottom: 20px;
 }
 
-.section p {
+.section-headers {
+    border-bottom: 3px solid white;
+    padding: 0 10px;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.section-content {
   padding: 0 10px;
   font-size: 110%;
 }
 
-@media screen and (max-width: 768px) {
-  .home-banner-content .headshot img {
-      height: 200px;
-  }
+#about-text {
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+i {
+  color: white;
+  font-size: 60px;
+  margin-top: 15px;
+}
+
+i#github-Icon {
+  padding-left: 8px;
 }
